@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'category',
     'accounts',
+    'store',
+    
 ]
 
 MIDDLEWARE = [
@@ -125,5 +127,9 @@ STATIC = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     'keda\static',
 ]
+
+# media files configuration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 
